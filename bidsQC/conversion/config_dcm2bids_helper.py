@@ -6,8 +6,8 @@ group = "sanlab" # This is the name of the group on Talapas to which your accoun
 
 # Directories
 # You don't need to use slashes in the path names, just put the parts of the path in quotes as shown below.
-path_toplevel = os.path.join(os.sep, "projects", "sanlab", "shared", "studyName") # folder that contains path_bidsdata and path_conversionfolder
-path_dicoms = os.path.join(os.sep, "projects", "lcni", "dcm", "sanlab", "Berkman", "REV")
+path_toplevel = os.path.join(os.sep, "home", "cmccann2", "bids_tutorial") # folder that contains path_bidsdata and path_conversionfolder
+path_dicoms = os.path.join(os.sep, "projects", "sanlab", "shared", "REV_examples")
 path_bidsdata = os.path.join(path_toplevel, "bids_data") # path to the folder where the niftis will be put
 path_conversionfolder = os.path.join(path_toplevel, "bidsQC", "conversion") # Contains subject_list.txt, config file, and dcm2bids_batch.py
 logdir = os.path.join(path_conversionfolder, "logs_helper") # Path to the folder where logs will be created
@@ -23,4 +23,4 @@ test_subject = "REV027_20150518_102229" # Name of a directory that contains DICO
 run_local = False
 
 # If run_local is set to false, enter the path for the singularity image. Else, set to "NA"
-singularity_image =  os.path.join(os.sep, "projects", "sanlab", "shared", "containers", "Dcm2Bids-master.simg")
+singularity_image =  os.path.join(os.sep, "home", "cmccann2", "containers", "dcm2bids_2021-12-30.sif")
