@@ -2,7 +2,7 @@ import os
 
 ######################## CONFIGURABLE PART BELOW ########################
 
-group = "sanlab" # This is the name of the group on Talapas to which your account belongs
+group = "dsnlab" # This is the name of the group on Talapas to which your account belongs
 
 # Directories
 # You don't need to use slashes in the path names, just put the parts of the path in quotes as shown below.
@@ -23,4 +23,4 @@ test_subject = "REV055_20150811_135636" # Name of a directory that contains DICO
 run_local = False
 
 # If run_local is set to false, enter the path for the singularity image. Else, set to "NA"
-singularity_image =  os.path.join(os.sep, "home", "cmccann2", "containers", "dcm2bids_2021-12-30.sif")
+singularity_image =  os.path.join(os.sep, "home", "cmccann2", "containers", "dcm2bids_2021-01-18.sif")
