@@ -6,9 +6,9 @@ from timepoint import TimePoint
 ######################## CONFIGURABLE PART BELOW ########################
 
 # Set directories (Check these for your study)
-# These variables are used in the main script and need to be defined here. 
+# These variables are used in the main script and need to be defined here.
 # They need to exist prior to running the qualityCheck.py
-path_bidsdata = os.path.join(os.sep, 'projects', "sanlab", 'shared', "studyName", 'bids_data')  # Where your subjects' nifti directories are
+path_bidsdata = os.path.join(os.sep, 'home', 'cmccann2', 'bids_tutorial' 'bids_data')  # Where your subjects' nifti directories are
 logdir = os.path.join(os.getcwd(), 'logs_qualityCheck')  # Log files will go in the folder from which this script is run
 
 # Create a dictionary (the thing below) for each timepoint in your study.
@@ -25,14 +25,14 @@ timepoint2 = TimePoint('ses-wave2', [sequence1, sequence5])  # Add as many timep
 expected_timepoints = [timepoint1, timepoint2]
 
 
-# Files g-zipped or not? 
-# NOTE: All files must be either zipped or unzipped. 
+# Files g-zipped or not?
+# NOTE: All files must be either zipped or unzipped.
 # A mixture won't work properly.
 gzipped = True
 
 # If you have different versions of the same task - e.g. stopsignal was run twice with different images
 # And those runs were named differently - e.g. stopsignalA and stopsignalB
-# You need them to be recognized as multiple runs of the same task. 
+# You need them to be recognized as multiple runs of the same task.
 # List them below to have the 'run-#' field appended to indicate the order in which they were run.
 order_sequences = True
 tasks_to_order = 'stopsignal'    # comma seperated if multiple
